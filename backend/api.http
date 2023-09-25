@@ -1,0 +1,52 @@
+### Registration
+POST http://localhost:8000/api/register
+Content-Type: application/json
+
+{
+"name": "Admin",
+"email": "admi@admin.com",
+"password": "password"
+}
+
+### Login
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "email": "admi@admin.com",
+    "password": "password"
+}
+
+### Profile
+GET http://localhost:8000/api/profile
+Content-Type: application/json
+Authorization: Bearer 4|ErfutnvCWrlcybA7mRp59xudzdO3EwqgewPynrrZ608de73b
+
+### Logout
+POST http://localhost:8000/api/logout
+Content-Type: application/json
+Authorization: Bearer 53|SyXPLyMRVH8ebIUfgY6z3TjjPuon3KN7nf2S8WaQ
+
+### Posts
+GET http://localhost:8000/api/posts
+Content-Type: application/json
+
+### Post view
+GET http://localhost:8000/api/posts/yarr-post
+Content-Type: application/json
+
+### Prayer
+GET http://localhost:8000/api/prayer
+Content-Type: application/json
+Authorization: Bearer 4|sXlKGvbkcpedo6ozjGfIc6oSJbX8B6Pl3KgrwmUj
+
+### Search
+POST http://localhost:8000/api/search/quran
+Content-Type: application/json
+Authorization: Bearer 6|w1YTXDgugTCqaZ4NC3sdjVwDOs310OLFpu3G8eAO
+
+{
+  "lang": "BN",
+  "query": "কে আকাশ থেকে পানি বর্ষণ করেন ও পৃথিবীকে মৃত্যুর পরে সঞ্জীবিত করেন?"
+}
+
